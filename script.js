@@ -1,8 +1,9 @@
-{       
-var product = "apple"
-var price = 50
-var tax = 5
 
+function area(l,b)
+{
+    return l*b
+    
+   
 }
-console.log(product)
-console.log(price+tax)
+const a=area(10,40)
+console.log("mass : "+a)
