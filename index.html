@@ -1,9 +1,55 @@
 <body>
-    <h1 id="title">Hello world</h1>
+    <input type="text" value="0" id="input">
+    <button onclick="check()">check</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    
 </body>
 
 <script>
-    var para=document.getElementById("title")
-    console.log(para.textContent)
-    para.textContent="bye"
+
+
+    var score = 10
+    
+     
+    function check()
+    {
+        
+        var input=document.getElementById("input").value
+        var p1=document.getElementById("p1")
+        var p2=document.getElementById("p2")
+        var r = Math.random()
+        var random = (Math.floor(r*10)+1)
+        if(Number(input) == Number(random) ){
+            p1.textContent="you are right"
+            p2.textContent="score : " + score
+            
+           
+        }
+        else{
+            score--
+            p1.textContent="you are wrong"
+            p2.textContent="score : " + score
+            
+        }
+
+
+
+    
+    
+
+        
+    
+    
+        
+    
+    
+
+    }
+    
+
+
+    
+    
 </script>
