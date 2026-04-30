@@ -1,55 +1,19 @@
-<body>
-    <input type="text" value="0" id="input">
-    <button onclick="check()">check</button>
-    <p id="p1"></p>
-    <p id="p2"></p>
 
-    
-</body>
 
+
+<button onclick="change()">add</button>
+<div id="div"></div>
 <script>
 
-
-    var score = 10
-    
-     
-    function check()
-    {
+    function change(){
+        var div = document.getElementById("div");
+        var h1 = document.createElement("h1");
+        h1.textContent = "Irfan"
+        div.append(h1)
         
-        var input=document.getElementById("input").value
-        var p1=document.getElementById("p1")
-        var p2=document.getElementById("p2")
-        var r = Math.random()
-        var random = (Math.floor(r*10)+1)
-        if(Number(input) == Number(random) ){
-            p1.textContent="you are right"
-            p2.textContent="score : " + score
-            
-           
-        }
-        else{
-            score--
-            p1.textContent="you are wrong"
-            p2.textContent="score : " + score
-            
-        }
-
-
-
-    
-    
-
-        
-    
-    
-        
-    
-    
 
     }
-    
+  
 
 
-    
-    
 </script>
