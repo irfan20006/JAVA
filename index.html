@@ -1,19 +1,26 @@
 
 
+<h1  onclick="change(event)">One</h1>
+<h1  onclick="change(event)">two</h1>
+<h1  onclick="change(event)">three</h1>
+<h1  onclick="change(event)">four</h1>
+<h1  onclick="change(event)">five</h1>
+<h1  onclick="change(event)">six</h1>
+<h1  onclick="change(event)">seven</h1>
 
-<button onclick="change()">add</button>
-<div id="div"></div>
+
+
+
+
+
 <script>
+    
+    
+    function change(touch){
 
-    function change(){
-        var div = document.getElementById("div");
-        var h1 = document.createElement("h1");
-        h1.textContent = "Irfan"
-        div.append(h1)
-        
+        touch.target.textContent = "";
 
     }
-  
-
+   
 
 </script>
