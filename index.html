@@ -1,26 +1,53 @@
+<!-- <style>
+    .overlay{
+        background-color:black;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0px;
+        left:0px;
+        opacity:0.8;
+        z-index:1;
+        display:none;
+    }
+    .popupbox{
+        position:absolute;
+        z-index:3;
+        background-color:white;
+        color:black;
+        width:40%;
+        padding:20px;
+        border-radius:10px;
+        left:30%;
+        display:none;
+    }
 
-
-<h1  onclick="change(event)">One</h1>
-<h1  onclick="change(event)">two</h1>
-<h1  onclick="change(event)">three</h1>
-<h1  onclick="change(event)">four</h1>
-<h1  onclick="change(event)">five</h1>
-<h1  onclick="change(event)">six</h1>
-<h1  onclick="change(event)">seven</h1>
-
-
-
-
-
+</style>
+<button onclick="show()">show</button>
+<div class="overlay"></div>
+<div class="popupbox">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem consectetur omnis asperiores facere nostrum adipisci quo ut ex cumque. Dolores beatae voluptates cupiditate debitis, aut officia asperiores esse at facilis!
+    </p>
+    <button onclick="del()">close</button>
+</div>
 
 <script>
-    
-    
-    function change(touch){
 
-        touch.target.textContent = "";
+    function show()
+    {
+        var overlay = document.getElementsByClassName("overlay")[0];
+        var popupbox = document.getElementsByClassName("popupbox")[0];
+        overlay.style.display = "block";
+        popupbox.style.display = "block";
+    }
+    function del()
+    {
+        var overlay = document.getElementsByClassName("overlay")[0];
+        var popupbox = document.getElementsByClassName("popupbox")[0];
+        overlay.style.display = "none";
+        popupbox.style.display = "none";
+
 
     }
-   
-
-</script>
+</script> -->
+<button></button>
